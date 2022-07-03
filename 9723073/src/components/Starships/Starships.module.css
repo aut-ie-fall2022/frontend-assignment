@@ -1,0 +1,63 @@
+.starships {
+    max-width: 60rem;
+    width: 90%;
+    margin: 2rem auto;
+    animation: meals-appear 1s ease-out forwards;
+    opacity: 0.8;
+    background-color: #000000DD;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    width: 60vw;
+    border-radius: 10px;
+    box-shadow: 0 0 80px 20px #000;
+    transition: background-color 0.50s;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .twoColumnContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .starnames{
+    display: flex;
+    width: 50%;
+  }
+
+  .starinfo {
+    display: flex;
+    width: 50%;
+    flex-direction: column  ;
+  }
+
+  h3{
+    display: flex;
+    justify-content: center;
+  }
+  .starships:hover {
+    /*background-color: #efeded;*/
+    background-color: #000000FF;
+
+}
+
+  .starships ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 0.8;
+      transform: translateY(0);
+    }
+  }
