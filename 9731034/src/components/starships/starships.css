@@ -1,0 +1,41 @@
+#page {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
+
+#pagination {
+    position: absolute;
+    bottom: 3%;
+    left: 38%;
+}
+.btn {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+.btn:hover {
+    background-color: rgba(221, 221, 221, 0.5);
+}
+
+td:hover {
+    background-color: rgba(221, 221, 221, 0.5);
+}
+#listing_page {
+    position: relative;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+#details {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    width: 50%;
+    font-size: 10px;
+    font-weight: bolder;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.11);
+}
