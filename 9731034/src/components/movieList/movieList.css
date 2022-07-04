@@ -1,0 +1,10 @@
+td {
+    backdrop-filter: blur(100px);
+    padding: 17px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: background-color .3s;
+}
+td:hover {
+    background-color: rgba(221, 221, 221, 0.5);
+}
