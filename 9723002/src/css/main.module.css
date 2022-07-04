@@ -1,0 +1,206 @@
+/* body design height and width 100v  position and color */
+/*
+  height & width:  ارتفاع و عرض کل صفحه مرورگر
+  background-image: عکس پس زمینه
+  background-position: عکس در وسط صفحه
+  color: رنگ نوشته ها
+  display: محل باکس فیلم flexible
+  justify-content: باکس فیلم از عرض صفحه وسط
+  align-items:باکس فیلم از ارتفاع صفحه وسط
+  
+  */
+.body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../public/illustration-Star-Wars-logo-brand-screenshot-1920x1080-px-616414-wallhere.com.jpg");
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* movie box width and height of box 50% and 60% / border white and radius  filter blur */
+/*
+      width: 50% صفحه;
+      height: 60%صفحه;
+      border: 0.2rem white solid         قاب دور باکس سفید سالید و 0.2;
+      border-radius: 5rem          حالت انها در باکس دور;
+      padding: 2rem 2rem 1rem 3rem       فاصله از دور قاب;
+      backdrop-filter: blur(1rem)     مات کردن عکس پس زمینه در محدوده قاب;
+    
+    */
+.titleOfh1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.sec {
+  width: 50%;
+  height: 65%;
+  border: 0.2em rgba(158, 151, 151, 0.8) outset;
+  border-radius: 5rem;
+  padding: 2rem 2rem 1rem 3rem;
+  backdrop-filter: blur(1rem);
+}
+
+/* MOVIE BOX h1 */
+
+/*
+    مارجین MOVIE
+    
+    */
+.h1 {
+  margin-bottom: 0.5rem;
+}
+/* information of each movie flexible and space between*/
+
+/*
+      display: نحوه نمایش اطلاعات فیلم در لیست کهflexible  است;
+      width: این اطلاعات چند درصد باکس را بگیرند;
+      justify-content: فاصله ی برابر بین المنت های هر لیست;
+    
+    */
+.movie {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+/*space between items and border */
+/*
+      margin-top: فاصله هر آیتم از لیست با یکدیگر (ارتفاع)
+      margin-left : فاصله هر آیتم از لیست با باکس (عرض)
+      :
+      */
+
+.li,
+.li3 {
+  margin-top: 1.8rem;
+  margin-left: 2rem;
+}
+.li {
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid white;
+}
+/* starships items*/
+/*
+      margin-top: فاصله هر آیتم از لیست با یکدیگر (ارتفاع)
+      margin-left : فاصله هر آیتم از لیست با باکس (عرض)
+      :
+      */
+
+.li2 {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+/* except starships of item  */
+/*
+      display: نمایش محتوا در یکخط;
+      width: 70%از عرض را استفاده میکند;
+      justify-content: فاصله ی برابر بین المنت های هر لیست;
+    
+    
+    */
+.movie2 {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+/*botton starships */
+/*
+      color: رنگ دکمه;
+      cursor: حالت کرسر روی لینک که پوینتر است;
+      background-color: rgba(0, 0, 0, 0)    رنگ پس زمینه دکمه;
+      border: قاب ندارد;
+      transition: 0.4s ease-in-out     حالت دکنه وقتی کرسر می آید چگونه تغییر کند;
+    
+     */
+.b {
+  color: orangered;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  transition: 0.4s ease-in-out;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.b:hover {
+  transform: scale(1.1);
+}
+/* star ships page (second page)*/
+
+/*
+      display: فاصله مناسب با لینک های پایین صفحه;
+      height: 100%  از تمام باکس استقاده میکند (ارتفاع);
+    */
+
+.star {
+  display: flex;
+  height: 100%;
+  margin-top: 1rem;
+}
+/* 2 columns in second page*/
+/*
+    از لحاظ عرض نصف میکند
+    
+    */
+.col1 {
+  width: 40%;
+}
+.col2 {
+  width: 60%;
+  border-left: 0.1rem dashed white;
+  padding-left: 1rem;
+  height: 85%;
+}
+/*starships explanation movie part*/
+/*
+    margin-left: فاصلع movie  از چپ;
+      margin-top: فاصلع movie  از بالا;
+    
+    */
+
+.dt {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+/*height of next prev section*/
+/*prev next page  style*/
+
+/*
+      display: نحوه نمایش next prev  که در یک خط بیفتد;
+      justify-content: فاصله یکسان باشد بین المنت ها;
+      margin:  فاصله خط اول با خط دوم;
+    
+    */
+.butd {
+  display: flex;
+  justify-content: space-evenly;
+}
+/*page in prev next*/
+
+/*رنگ page نارنجی قرمز*/
+
+.parag {
+  color: orangered;
+}
+/*back tp  movies in prev*/
+/*
+      width: نمایش back to movie که از صد در صد عرض استفاده کند
+      margin: اتومات جا به جا شود;
+    
+    */
+.back {
+  width: 100%;
+  margin: 0 auto;
+}
+.row1 {
+  height: 85%;
+}
+.row2 {
+  height: 15%;
+  margin-left: -1.5rem;
+}
+.header {
+  font-size: 1.5rem;
+}
